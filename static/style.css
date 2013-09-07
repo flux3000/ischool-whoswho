@@ -33,6 +33,12 @@ h1 {
 	text-align: center;
 }
 
+.center {
+    font-weight: bold;
+    float: center;
+    text-align: center;
+}
+
 #content img {
 	padding: 50px;
 }

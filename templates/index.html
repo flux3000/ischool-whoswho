@@ -1,5 +1,6 @@
 <html>
 <head>
+<link rel="icon" href="/favicon.ico" />
 <link rel="stylesheet" href="static/reveal.css">
 <link rel="stylesheet" href="static/style.css">
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
@@ -14,18 +15,21 @@
 	<div id="main">
 	<h1>Who is {{ featuredName }}?</h1>
 
-	<a href="#" class="profile-one" data-reveal-id="{{ featured1 }}"><img src='static/profilephotos/{{ handle1 }}.jpeg' class='{{ featured1 }}'></a><a href="#" class="profile-two" data-reveal-id="{{ featured2 }}"><img src='static/profilephotos/{{ handle2 }}.jpeg'></a><a href="#" class="profile-three" data-reveal-id="{{ featured3 }}"><img src='static/profilephotos/{{ handle3 }}.jpeg'  class='{{ featured3 }}'></a>
+	<a href="#" class="profile-one" data-reveal-id="{{ featured1 }}"><img src='static/profilephotos/{{ photo1 }}' class='{{ featured1 }}'></a><a href="#" class="profile-two" data-reveal-id="{{ featured2 }}"><img src='static/profilephotos/{{ photo2 }}'></a><a href="#" class="profile-three" data-reveal-id="{{ featured3 }}"><img src='static/profilephotos/{{ photo3 }}'  class='{{ featured3 }}'></a>
 	</div>
 
 	<div id="footer">
 		<h2>About this Site</h2>
-		<p>Who's Who is a website for learning the names and faces of current students at the <a href="http://ischool.berkeley.edu">UC Berkeley School of Information</a>. It was hacked together in an afternoon by <a href="http://davelester.org">Dave Lester</a>. The <a href="http://www.flickr.com/photos/n8agrin/2073530456/">photo of South Hall</a> used as the website's background image was taken by Nate Agrin.</p>
+		<p>Who's Who is a website for learning the names and faces of current students at the <a href="http://ischool.berkeley.edu">UC Berkeley School of Information</a>. It was hacked together in an afternoon by <a href="http://davelester.org">Dave Lester</a>. The <a href="http://www.flickr.com/photos/n8agrin/2073530456/">photo of South Hall</a> used as the website's background image was taken by Nate Agrin. Updates and fixes added by Ryan Baker in September 2013.</p>
 	</div>
 </div>
 
 <div id="featured" class="reveal-modal">
 	<h1>Correct! Meet {{ featuredName }}</h1>
+    <p><img src="static/profilephotos/{{ featuredPhoto }}" class="center"></p>
+	<p>Class: {{ featuredYear }}</p>
 	<p>Focus: {{ featuredFocus }}</p>
+    <p><a href="./" class="center">Continue</a></p>
 	<a class="close-reveal-modal">&#215;</a>
 </div>
 
